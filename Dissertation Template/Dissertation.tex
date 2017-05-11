@@ -1,0 +1,94 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX definitions for a Dissertation/Thesis ****************
+% ----------------------------------------------------------------
+\documentclass[a4paper,11pt,nocenter,bold,noupper,headcount]{mythesis}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{natbib}
+\usepackage{appendix}
+\usepackage{palatino}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+
+% THEOREMS -------------------------------------------------------
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{con}[thm]{Conjecture}
+\newtheorem{lem}[thm]{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ass}[thm]{Assumption}
+\newtheorem{exam}[thm]{Example}
+
+% OTHER ----------------------------------------------------------
+
+\newcommand{\setlinespacing}[1]
+           {\renewcommand{\baselinestretch}{#1}\small\normalsize}
+
+% PREAMBLE -------------------------------------------------------
+
+\title{Title}
+
+\author{Author}
+
+\statement{A dissertation submitted to a faculty.}
+
+\institution{Institution.}
+
+\chapapp{\chaptername}
+\chapterfont{\Huge\bfseries}
+\setlength{\topmargin}{0.5cm} \setlength{\headsep}{1cm}
+\setlength{\textwidth}{14.0cm} \setlength{\headwidth}{14.0cm}
+\setlength{\textheight}{22cm} %\setlength{\leftmargin}{0cm}
+\setlength{\oddsidemargin}{1cm} \setlength{\evensidemargin}{0cm}
+
+%%% --------------------------------------------------------------
+
+\begin{document}
+
+\maketitle \setlinespacing{1.20} \frontmatter
+
+\include{FrontMatter}
+
+\setlinespacing{1} \thispagestyle{plain}
+\tableofcontents \thispagestyle{plain}
+\listoffigures \thispagestyle{plain}
+\listoftables \thispagestyle{plain}
+\setlinespacing{1.20}
+
+% ----------------------------------------------------------------
+
+\mainmatter
+
+\include{Chapter1}
+
+\include{Chapter2}
+
+\include{Chapter3}
+
+\include{Chapter4}
+
+\include{Chapter5}
+
+\include{Chapter6}
+
+\setlinespacing{1}
+
+% ----------------------------------------------------------------
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{dcu_etal}
+\bibliography{Refs}
+
+\include{Appendix}
+
+\end{document}
