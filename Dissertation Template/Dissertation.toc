@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {4.1}Section 1}{4}{section.4.1}
 \contentsline {chapter}{\numberline {5.}Results}{5}{chapter.5}
 \contentsline {chapter}{\numberline {6.}Conclusion}{6}{chapter.6}
-\contentsline {chapter}{Appendix}{7}{chapter.6}
 \contentsline {chapter}{Bibliography}{7}{chapter.6}
+\contentsline {chapter}{Appendix}{8}{chapter*.7}
