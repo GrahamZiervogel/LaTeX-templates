@@ -1,0 +1,97 @@
+\documentclass[10pt]{beamer}
+
+\mode<presentation>
+{
+  	\usetheme{Berlin}
+ 	\usecolortheme{dolphin}
+  	\setbeamercovered{transparent}
+  	\setbeamertemplate{navigation symbols}{}
+	\usefonttheme{professionalfonts}
+}
+
+\setbeamertemplate{footline}
+{%
+\begin{beamercolorbox}[wd=1.0\textwidth,ht=2.6ex,dp=1ex,leftskip=.5em,rightskip=.5em]{author in head/foot}%
+\usebeamerfont{author in head/foot}%
+\insertshortauthor\hfill\insertshortinstitute%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=1.0\textwidth,ht=2.6ex,dp=1ex,left,leftskip=.5em,rightskip=.5em]{title in head/foot}%
+\usebeamerfont{title in head/foot}%
+\insertshorttitle\hfill\insertdate%
+\end{beamercolorbox}%
+}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{graphicx}   
+
+\graphicspath{{Images/}}
+\renewcommand{\dateseparator}{--}
+\setlist[itemize]{leftmargin=*}
+\setlist[itemize,1]{label={\textcolor{blue}{\textbullet}}}
+\setbeamertemplate{caption}[numbered]
+
+\title{Presentation Title}
+\author{Graham Ziervogel}
+\institute{Organisation}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section{Section 1}
+\subsection{Subsection 1}
+
+\begin{frame}{Slide 1}
+\begin{itemize}
+\pause
+\item Bullet
+\pause
+\item Bullet
+\pause
+\item Bullet
+\pause
+\item Bullet
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Slide 2}
+\begin{itemize}
+\pause
+\item Bullet 1.
+\pause
+\item Bullet 2.
+\end{itemize}
+\end{frame}
+
+\section{Section 2}
+\subsection{Subsection 1}
+
+\begin{frame}{Slide 1}
+\begin{itemize}
+\pause
+\item A cheeky reference: \cite{AA14}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+	\footnotesize
+	\bibliographystyle{elsarticle-harv}
+	\bibliography{Refs}
+\end{frame}
+
+\end{document}
